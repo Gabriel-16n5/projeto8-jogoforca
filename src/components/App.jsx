@@ -1,12 +1,10 @@
+import palavras from "../palavras";
+import Jogo from "./Jogo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Pipoca
-        </p>
-      </header>
+      <Jogo />
     </div>
   );
 }

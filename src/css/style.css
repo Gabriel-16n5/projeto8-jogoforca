@@ -1,0 +1,39 @@
+body{
+    width: 1025px;
+}
+
+.forca{
+    box-sizing: border-box;
+    margin-top: 59px;
+    margin-left: 38px;
+    width: 400px;
+    height: 466px;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botao{
+    width: 200px;
+    height: 60px;
+    background: #27AE60;
+    border-radius: 8px;
+    margin-top: 89px;
+    margin-right: 53px;
+    text-size-adjust: 20px;
+}
+
+.text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
