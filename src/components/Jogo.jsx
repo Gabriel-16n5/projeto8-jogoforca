@@ -12,7 +12,7 @@ function Jogo(){
         <>
         <div className="topo">
             <img className="forca" src={forca0} alt="forca" />
-            <button className="botao"><p className="text">Escolher palavra</p></button>
+            <button className="botao"><p className="text">Escolher palavra!</p></button>
         </div>
         <div>
             
