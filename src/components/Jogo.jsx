@@ -15,12 +15,12 @@ let letraPorLetra;
 let letraPorLetraSecreta;
 let DistrinchaPRandom;
 
-function Jogo({desativa, setDesativa, palavra, setPalavra, secret, setSecret}){
+function Jogo({desativa, setDesativa, palavra, setPalavra, secret, setSecret, forca, setForca}){
     function PalavraSecreta(){
         if(pRandom === ""){
             pRandom = palavras[Math.floor(Math.random() * palavras.length)];
         }
-            DistrinchaPRandom = pRandom.split(''); //Esse é o array para comparar
+            DistrinchaPRandom = pRandom.split('');
             setPalavra(pRandom);
             letraPorLetra = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{d}</p> )
             letraPorLetraSecreta = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{"_"}</p> )
@@ -35,7 +35,7 @@ function Jogo({desativa, setDesativa, palavra, setPalavra, secret, setSecret}){
     return(
         <>
         <div className="topo">
-            <img className="forca" src={forca0} alt="forca" />
+            <img className="forca" src={forca} alt="forca" />
             <div onClick={PalavraSecreta}>
                 <button onClick={() => setDesativa(!desativa)} className="botao"><p className="text">Escolher palavra!</p></button>
                 <div className="palavraSecreta">{desativa ? "" : <div className="palavraSecretaLetraPorLetra">{secret}</div>}</div>
