@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Jogo desativa={desativa} setDesativa={setDesativa} palavra={palavra} setPalavra={setPalavra} secret={secret} setSecret={setSecret}/>
-      <Letras desativa={desativa} usada={usada} setUsada={setUsada} alfabetoState={alfabetoState} setAlfabetoState={setAlfabetoState}/>
+      <Letras desativa={desativa} usada={usada} setUsada={setUsada} alfabetoState={alfabetoState} setAlfabetoState={setAlfabetoState} palavra={palavra} setPalavra={setPalavra} secret={secret} setSecret={setSecret}/>
     </div>
   );
 }

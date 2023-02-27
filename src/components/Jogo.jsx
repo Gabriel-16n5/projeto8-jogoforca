@@ -16,17 +16,19 @@ let letraPorLetraSecreta;
 let DistrinchaPRandom;
 
 function Jogo({desativa, setDesativa, palavra, setPalavra, secret, setSecret}){
-    setSecret(letraPorLetraSecreta);
-    setPalavra(letraPorLetra);
     function PalavraSecreta(){
         if(pRandom === ""){
             pRandom = palavras[Math.floor(Math.random() * palavras.length)];
         }
             DistrinchaPRandom = pRandom.split(''); //Esse é o array para comparar
+            setPalavra(pRandom);
             letraPorLetra = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{d}</p> )
             letraPorLetraSecreta = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{"_"}</p> )
+            setSecret(letraPorLetraSecreta);
         return(
-            <div className="palavraSecretaLetraPorLetra">{secret}</div>
+            <>
+
+            </>
             
         )
     }
