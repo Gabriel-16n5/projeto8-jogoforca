@@ -54,7 +54,7 @@ function Letras({setFim, setForca, desativa, usada, setUsada, setAlfabetoState, 
             pipoquinhaa = pipoquinha.replace(/,/g, "").replace(/\./g, "");
             if(palavrinha === pipoquinhaa){
                 setFim("ganhou");
-             } else if(pipoca.indexOf(novo)){
+             } else if(novo.includes(palavra[i])){
                 
              }else {
                 erou();
@@ -69,7 +69,7 @@ function Letras({setFim, setForca, desativa, usada, setUsada, setAlfabetoState, 
 
     return(
         <div className="letraContainer">
-            {alfabetoState.map((a, i) => <button onClick={() => letraClicada(a, i)} disabled={desativa} key={i} className="letra"><p className="pLetra">{a.toUpperCase()}</p></button>)}        
+            {alfabetoState.map((a, i) => <button data-test="letter" onClick={() => letraClicada(a, i)} disabled={desativa} key={i} className="letra"><p className="pLetra">{a.toUpperCase()}</p></button>)}        
         </div>
     )
 }

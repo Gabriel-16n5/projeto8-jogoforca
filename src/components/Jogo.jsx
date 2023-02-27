@@ -24,10 +24,10 @@ function Jogo({fim, desativa, setDesativa, setPalavra, secret, setSecret, forca}
     return(
         <>
         <div className="topo">
-            <img className="forca" src={forca} alt="forca" />
+            <img data-test="game-image" className="forca" src={forca} alt="forca" />
             <div onClick={PalavraSecreta}>
-                <button onClick={() => setDesativa(!desativa)} className="botao"><p className="text">Escolher palavra!</p></button>
-                <div className="palavraSecreta">{desativa ? "" : <div className={`palavraSecretaLetraPorLetra ${fim}`}>{secret}</div>}</div>
+                <button data-test="choose-word" onClick={() => setDesativa(!desativa)} className="botao"><p className="text">Escolher palavra!</p></button>
+                <div data-test="word" className="palavraSecreta">{desativa ? "" : <div className={`palavraSecretaLetraPorLetra ${fim}`}>{secret}</div>}</div>
             </div>
         </div>
         </>
