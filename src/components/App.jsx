@@ -1,5 +1,4 @@
 import React from "react";
-import palavras from "../palavras";
 import Jogo from "./Jogo";
 import Letras from "./Letras";
 import forca0 from "../assets/forca0.png";

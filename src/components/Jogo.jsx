@@ -1,28 +1,17 @@
-
-import forca0 from "../assets/forca0.png";
-import forca1 from "../assets/forca1.png";
-import forca2 from "../assets/forca2.png";
-import forca3 from "../assets/forca3.png";
-import forca4 from "../assets/forca4.png";
-import forca5 from "../assets/forca5.png";
-import forca6 from "../assets/forca6.png";
 import palavras from "../palavras";
-import App from "./App";
-import Letras from "./Letras";
 import React from "react";
 let pRandom = "";
-let letraPorLetra;
 let letraPorLetraSecreta;
 let DistrinchaPRandom;
 
-function Jogo({fim, setFim, desativa, setDesativa, palavra, setPalavra, secret, setSecret, forca, setForca}){
+function Jogo({fim, desativa, setDesativa, setPalavra, secret, setSecret, forca}){
     function PalavraSecreta(){
         if(pRandom === ""){
             pRandom = palavras[Math.floor(Math.random() * palavras.length)];
         }
             DistrinchaPRandom = pRandom.split('');
             setPalavra(pRandom);
-            letraPorLetra = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{d}</p> )
+            DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{d}</p> )
             letraPorLetraSecreta = DistrinchaPRandom.map((d, i) => <p key={i} className="pLetraLetraPorLetra">{"_"}</p> )
             setSecret(letraPorLetraSecreta);
         return(

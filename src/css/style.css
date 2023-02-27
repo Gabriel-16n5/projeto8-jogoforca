@@ -85,6 +85,11 @@ body{
     display: flex;
     justify-content:center;
     flex-direction: row;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 19px;
 }
 
 .pLetraLetraPorLetra{
@@ -102,9 +107,19 @@ body{
 }
 
 .ganhou{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 19px;
     color: green;
 }
 
 .perdeu{
     color: red;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 19px;
 }
