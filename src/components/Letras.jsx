@@ -8,12 +8,13 @@ import forca4 from "../assets/forca4.png";
 import forca5 from "../assets/forca5.png";
 import forca6 from "../assets/forca6.png";
 let contador = 0;
-let oi = 0;
-let oii = 0;
-let oiii =  0;
+let pipoca;
+let palavrinha;
+let pipoquinha;
+let pipoquinhaa;
 const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-function Letras({forca, setForca, desativa, setDesativa, usada, setUsada, setAlfabetoState, alfabetoState, palavra, setPalavra, secret, setSecret}){
+function Letras({fim, setFim, forca, setForca, desativa, setDesativa, usada, setUsada, setAlfabetoState, alfabetoState, palavra, setPalavra, secret, setSecret}){
     function erou(){
             contador++;
             switch(contador){
@@ -45,14 +46,18 @@ function Letras({forca, setForca, desativa, setDesativa, usada, setUsada, setAlf
         setUsada(novo);
         for(let i = 0; i<palavra.length;i++){
             if(novo.includes(palavra[i])){
-            let pipoca = secret
+            pipoca = secret
             pipoca[i] = palavra[i]
             setSecret(pipoca)
+            palavrinha = palavra.toString();
+            pipoquinha = pipoca.toString();
+            pipoquinhaa = pipoquinha.replace(/,/g, "").replace(/\./g, "");
+            if(palavrinha === pipoquinhaa){
+                setFim("ganhou");
+             } 
              } 
         }
      }
-    
-
 
     return(
         <div className="letraContainer">

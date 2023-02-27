@@ -100,3 +100,11 @@ body{
     box-sizing: border-box;
     padding: 5px 5px 5px 5px;
 }
+
+.ganhou{
+    color: green;
+}
+
+.perdeu{
+    color: red;
+}
