@@ -1,5 +1,6 @@
-const palavras = [
-    "abacate", "abacaxi", "abelha", "abanador", "antologia", "amor", "aba", "abrigo", "abrir",
+export const palavras = [
+    "abacate", 
+    "abacaxi", "abelha", "abanador", "antologia", "amor", "aba", "abrigo", "abrir",
     "banana", "boi", "batata", "bacalhau", "bexiga", "bowl", "batedeira", "bisturi", "barreira", "banco",
     "caixa", "chantilly", "cachorro", "cuidado", "caneta", "carinho", "cabra", "cesto",
     "dados", "dizer", "danone", "dente", "diamante", "diafragma", "detonar", "dia",
@@ -24,4 +25,5 @@ const palavras = [
     "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido"
 ]
 
-export default palavras;
+export const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+

@@ -1,8 +1,13 @@
-body{
-    width: 1025px;
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.forca{
+.forca-img{
     box-sizing: border-box;
     margin-top: 59px;
     margin-left: 38px;
@@ -10,20 +15,23 @@ body{
     height: 466px;
 }
 
-.topo{
+.app-forca{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    width: 1400px;
+    margin-bottom: 40px;
+    /* position: relative; */
+    /* background-color: #27AE60; */
 }
 
 .botao{
-    width: 200px;
-    height: 60px;
+    width: 188px;
+    height: 61px;
     background: #27AE60;
     border-radius: 8px;
     margin-top: 89px;
-    margin-right: 53px;
+    margin-left: 53px;
     text-size-adjust: 20px;
+    
 }
 
 .text{
@@ -44,7 +52,6 @@ body{
     height: 110px;
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
     margin-top: 50px;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -71,25 +78,20 @@ body{
     align-items: center;
     text-align: center;
     color: #39739D;
-    
-}
-
-.palavraSecreta{
-    margin-top: 300px;
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
 }
 
 .palavraSecretaLetraPorLetra{
-    display: flex;
-    justify-content:center;
-    flex-direction: row;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
     line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:black;
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
 }
 
 .pLetraLetraPorLetra{
